@@ -29,3 +29,12 @@ jobs:
       uses: esdrascaleb/unity-code-smell-analyzer-action@v1
       with:
         unity_project_name: 'YourUnityProjectName' # Optional, defaults to repository name
+```
+
+## Inputs
+unity_project_name: (Optional) The name of the Unity project solution file (.sln). If not provided, the repository name is used.
+License
+This project is licensed under the MIT License.
+
+## Credits
+Developed by Esdras Caleb. Special thanks to Matteo Bosco for creating the UnityCodeSmellAnalyzer, and Geto (AI Assistant) for contribution in the creation of this action.
