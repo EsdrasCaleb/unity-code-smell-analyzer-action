@@ -1,0 +1,16 @@
+name: Unity Code Smell Analyzer
+
+description: A GitHub Action to run UnityCodeSmellAnalyzer on Unity projects.
+
+inputs:
+  unity_project_name:
+    description: 'Optional name of the Unity project solution (.sln). Defaults to repository name.'
+    required: false
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
+branding:
+  icon: 'code'
+  color: 'green'
