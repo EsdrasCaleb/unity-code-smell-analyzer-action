@@ -6,11 +6,11 @@ RUN apt-get update && apt-get install -y git
 
 # Clone UnityCodeSmellAnalyzer repository and build it
 RUN git clone https://github.com/MatteoBosco89/UnityCodeSmellAnalyzer.git && \
-    cd UnityCodeSmellAnalyzer && \
+    cd     UnityCodeSmellAnalyzer/ShellStarter && \
     dotnet build
 
 # Set the working directory to the root of the repository
 WORKDIR /github/workspace
 
 # Entry point for the action
-ENTRYPOINT ["bash", "/UnityCodeSmellAnalyzer/run.sh"]
+ENTRYPOINT ["bash", "/UnityCodeSmellAnalyzer/ShellStarter/run.sh"]
